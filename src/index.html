@@ -1,5 +1,5 @@
 ---
-title: 'Pixel Perfect Websites | Code Stitch Web Designs | Denver, CO'
+title: 'Clark Seals Website | Better Website Designs Designs | Tulsa, OK'
 description: 'Meta description for the page'
 preloadImg: '/assets/images/landing.jpg'
 permalink: '/'
@@ -74,315 +74,419 @@ eleventyNavigation:
 
 {% block body %}
 
-    <!-- ============================================ -->
-    <!--                    Hero                      -->
-    <!-- ============================================ -->
+    <!-- Usage Notes:
+We made this stitch to overlap the section below it, so if there's a patterned texture or image background on the next section below, it will overlap on top of it. Other Stitches like this would have a white gap between the cards an the next section. In order to make Stitches like this work, we need to add a padding top on the section below it to counteract the overlap. 
 
-    <section id="hero">
-        <div class="cs-container">
-            <div class="cs-flex-group">
-                <span class="cs-topper">mountain hiking society</span>
-                <h1 class="cs-title">Explore the World with Exciting People</h1>
-                <p class="cs-text">
-                    Tincidunt lobortis feugiat vivamus at augue eget arcu dictum varius. Nibh tortor id aliquet lectus proin nibh condimentum.
-                </p>
-                <a href="/about" class="cs-button-solid">Explore More</a>
-                <a href="/contact" class="cs-button-transparent">
-                    <img
-                    class="cs-img"
-                    loading="lazy"
-                    decoding="async"
-                    src="https://csimg.nyc3.digitaloceanspaces.com/Hero/play.svg"
-                    alt="play icon"
-                    width="17"
-                    height="17"/>
-                    Get in Touch
-                </a>
-            </div>
-        </div>
+ON MOBILE (360px): add padding-top: (654/16rem); using LESS, or padding-top: calc(654 / 16 * 1rem); if you're using SCSS, or padding-top: 40.875rem; if you're just using vanilla CSS.
 
-        <!-- Background Image -->
-        <picture class="cs-picture">
-            <source media="(max-width: 600px)" srcset="/assets/images/landing-m.webp">
-            <source media="(min-width: 601px)" srcset="/assets/images/landing.jpg">
-            <img aria-hidden="true" decoding="async" src="/assets/images/landing.jpg" alt="new home" width="2500" height="1667" loading="eager">
-        </picture>
-    </section>
+ON TABLET (768px): Reset to padding-top: (230/16rem); using LESS, padding-top: calc(230 / 16 * 1rem) for SCSS or padding-top: 15.625rem; for CSS
 
-    <!-- ============================================ -->
-    <!--                  Services                    -->
-    <!-- ============================================ -->
+Doing this will complete the overlapping "breaking the container" look.
+-->
 
-    <section id="services" class="services">
-        <!-- Get Icons From flaticon.com -->
-        <div class="card">
-            <picture>
-                <img
-                aria-hidden="true"
-                decoding="async"
-                src="/assets/svgs/service1.svg"
-                alt="appliance"
-                width="48"
-                height="48"/>
-            </picture>
-            <h2>Service 1</h2>
-            <p>Talk about the service with keywords people will be searching for it by. Keep it 1-2 sentences.</p>
-        </div>
-        <div class="card">
-            <picture>
-                <img
-                aria-hidden="true"
-                decoding="async"
-                src="/assets/svgs/service2.svg"
-                alt="appliance"
-                width="48"
-                height="48"/>
-            </picture>
-            <h2>Service 2</h2>
-            <p>Talk about the service with keywords people will be searching for it by. Keep it 1-2 sentences.</p>
-        </div>
-        <div class="card">
-            <picture>
-                <img
-                aria-hidden="true"
-                decoding="async"
-                src="/assets/svgs/service3.svg"
-                alt="appliance"
-                width="48"
-                height="48"/>
-            </picture>
-            <h2>Service 3</h2>
-            <p>Talk about the service with keywords people will be searching for it by. Keep it 1-2 sentences.</p>
-        </div>
-    </section>
+<!-- ============================================ -->
+<!--                    Hero                      -->
+<!-- ============================================ -->
 
-    <!-- ============================================ -->
-    <!--                 Side By Side                 -->
-    <!-- ============================================ -->
-
-    <section id="sbs">
-        <div class="cs-container">
-            <!-- Left Image Section -->
-            <div class="cs-left">
-                <picture class="cs-picture cs-picture1">
-                    <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="cabinets" loading="lazy" width="400" height="563">
-                </picture>
-                <picture class="cs-picture cs-picture2">
-                    <source media="(max-width: 600px)" srcset="/assets/images/construction-m.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/construction.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/construction.jpg" alt="house" loading="lazy" width="400" height="563">
-                </picture>
-            </div>
-            <!-- Right Content Section-->
-            <div class="cs-right">
-                <span class="cs-topper">About Us</span>
-                <h2 class="cs-title">About Company Title</h2>
-                <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
-                </p>
-                <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
-                </p>
-                <div class="cs-flex-group">
-                    <p class="cs-flex-p">
-                        In consequat tincidunt turpis sit amet imperdiet. Praesent Classei consequat tincidunt turpis sit amet imperdiet for mind.
-                    </p>
-                    <span class="cs-name">Justin Time</span>
-                    <span class="cs-job">CEO-Founder</span>
-                    <img 
-                    class="cs-quote-icon"
-                    loading="lazy"
-                    decoding="async"
-                    src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg"
-                    alt="gavel"
-                    width="136"
-                    height="77"/>
-                </div>
-                <a href="/about" class="cs-button-solid">More About Us</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- ============================================ -->
-    <!--            Extra Content To Rank             -->
-    <!-- ============================================ -->
-
-    <section id="sbs-r">
-        <div class="cs-container">
-            <!-- Left Image Section -->
-            <div class="cs-left">
-                <picture class="cs-picture cs-picture1">
-                    <source media="(max-width: 600px)" srcset="/assets/images/construction-m.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/construction.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/construction.jpg" alt="house" loading="lazy" width="400" height="560">
-                </picture>
-                <picture class="cs-picture cs-picture2">
-                    <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="cabinets" loading="lazy" width="400" height="560">
-                </picture>
-            </div>
-            <!-- Right Content Section-->
-            <div class="cs-right">
-                <span class="cs-topper">SEO Ranking</span>
-                <h2 class="cs-title">Talk about a main service keyword</h2>
-                <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
-                </p>
-                <p class="cs-text">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non tenetur, iure nihil ipsam qui atque commodi id voluptatem nesciunt, quis animi fuga cum doloribus! Eaque laboriosam, unde consectetur iure asperiores ullam. Consequuntur debitis a voluptatibus vitae optio autem explicabo quia neque est quas, in placeat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus modi laudantium voluptatibus rem libero error minus quia eligendi sapiente eos.
-                </p>
-                <a href="/blog" class="cs-button-solid">Read our Blog</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- ============================================ -->
-    <!--                   Gallery                    -->
-    <!-- ============================================ -->
-
-    <section id="gallery">
-        <div class="cs-container">
-            <span class="cs-topper">Our Portfolio</span>
-            <h2 class="cs-title">Et orci volutpat, back up generator installations</h2>
-            <div class="cs-image-group">
-                <!-- Row 1-->
-                <div class="cs-row cs-row-1">
-                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-                    <picture class="cs-picture cs-picture1">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port1-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port1.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port1.jpg" alt="new hallway" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture2">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port4-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port4.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port4.jpg" alt="new home construction" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture3">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port7-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port7.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port7.jpg" alt="building a new wall" loading="lazy" width="400" height="560">
-                    </picture>
-                </div>
-                <!-- Row 2 -->
-                <div class="cs-row cs-row-2">
-                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-                    <picture class="cs-picture cs-picture1">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port2-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port2.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port2.jpg" alt="new kitchen" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture2">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port5-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port5.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port5.jpg" alt="apartment addition" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture3">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port8-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port8.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port8.jpg" alt="kew kitchen cabinets" loading="lazy" width="400" height="560">
-                    </picture>
-                </div>
-                <!-- Row 3 -->
-                <div class="cs-row cs-row-3">
-                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-                    <picture class="cs-picture cs-picture1">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port3-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port3.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port3.jpg" alt="new kitchen" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture2">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port6-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port6.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port6.jpg" alt="apartment addition" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture3">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port9-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port9.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port9.jpg" alt="kew kitchen cabinets" loading="lazy" width="400" height="560">
-                    </picture>
-
-                </div>
-            </div>
-            <a href="/projects" class="cs-button-solid">View Full Gallery</a>
-        </div>
-    </section>
-
-    <!-- ============================================ -->
-    <!--                   Reviews                    -->
-    <!-- ============================================ -->
-
-    <section id="reviews">
-        <div class="cs-container">
-            <span class="cs-topper">Our Reviews</span>
-            <h2 class="cs-title">Words From Our Customers</h2>
+<section id="hero-1250">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h1 class="cs-title">Engineering Excellence, Sealing the Future.</h1>
             <p class="cs-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit dolor volutpat porttitor sagittis nunc nisl. Sagittis sit pellentesque gravida viverra. Leo ut sed euismod tortor risus et. Ornare non neque, leo, ornare. Lorem ipsum dolor sit amet.
+                Partnering with industries worldwide, we design and manufacture high-performance elastomeric seals for OEMs, oil and gas, and beyond.
             </p>
-            <ul class="cs-card-group">
-                <!-- Review 1 -->
-                <li class="cs-item">
-                    <img
-                    class="cs-item-img"
-                    aria-hidden="true"
-                    loading="lazy"
-                    decoding="async"
-                    src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile5.png"
-                    alt="profile picture"
-                    width="80"
-                    height="80"/>
-                    <p class="cs-item-p">
-                        Dictum dolor, nullam morbi sem in auctor proin. Consequat dolor habitasse nam sed tempor. Viverra magna pharetra rhoncus, nec sed ullamcorper lectus et. Auctor velit diam fermentum consequat. Feugiat viverra massa urna, volutpat orci imperdiet eget eget.
-                    </p>
-                    <span class="cs-reviewer">
-                        Jon Doe
-                        <span class="cs-desc">Homeowner</span>
-                    </span>
-                    <img
-                    class="cs-item-stars"
-                    aria-hidden="true"
-                    loading="lazy"
-                    decoding="async"
-                    src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/stars-yellow.svg"
-                    alt="stars"
-                    width="96"
-                    height="16"/>
-                </li>
-                <!-- Review 2 -->
-                <li class="cs-item">
-                    <img
-                    class="cs-item-img"
-                    aria-hidden="true"
-                    loading="lazy"
-                    decoding="async"
-                    src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile-4.png"
-                    alt="profile picture"
-                    width="80"
-                    height="80"/>
-                    <p class="cs-item-p">
-                        Dictum dolor, nullam morbi sem in auctor proin. Consequat dolor habitasse nam sed tempor. Viverra magna pharetra rhoncus, nec sed ullamcorper lectus et. Auctor velit diam fermentum consequat. Feugiat viverra massa urna, volutpat orci imperdiet eget eget.
-                    </p>
-                    <span class="cs-reviewer">
-                        Jane Doe
-                        <span class="cs-desc">Homeowner</span>
-                    </span>
-                    <img
-                    class="cs-item-stars"
-                    aria-hidden="true"
-                    loading="lazy"
-                    decoding="async"
-                    src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/stars-yellow.svg"
-                    alt="stars"
-                    width="96"
-                    height="16"/>
-                </li>
-            </ul>
-            <a aria-label="read more reviews" href="/reviews" class="cs-button-solid">Our Reviews</a>
+            <a href="" class="cs-button-solid">Get A Quote</a>
         </div>
-    </section>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <a href="/project-one" class="cs-link">
+                    <h3 class="cs-h3">  Custon Seal Desgin</h3>
+                    <p class="cs-item-text">
+                        Custon Seal's are individually designed and optimized for each application.
+                    </p>
+                </a>
+                <picture class="cs-item-background">
+                    <source media="(max-width: 600px)" srcset="https://ik.imagekit.io/6ycdefzj5/clarksealsdesign.jpg">
+                    <source media="(min-width: 601px)" srcset="https://ik.imagekit.io/6ycdefzj5/clarksealsdesign.jpg">
+                    <img decoding="async" src="https://ik.imagekit.io/6ycdefzj5/clarksealsdesign.jpg" alt="construction" width="413" height="374" aria-hidden="true">
+                </picture>
+            </li>
+            <li class="cs-item">
+                <a href="/project-two" class="cs-link">
+                    <h3 class="cs-h3">Application Engineering</h3>
+                    <p class="cs-item-text">
+                        Clark Seal's provide full engineering support for new and exisitng applications.
+                    </p>
+                </a>
+                <picture class="cs-item-background">
+                    <source media="(max-width: 600px)" srcset="https://ik.imagekit.io/6ycdefzj5/clarksealsapplication.jpg">
+                    <source media="(min-width: 601px)" srcset="https://ik.imagekit.io/6ycdefzj5/clarksealsapplication.jpg">
+                    <img decoding="async" src="https://ik.imagekit.io/6ycdefzj5/clarksealsapplication.jpg" alt="construction" width="413" height="374" aria-hidden="true">
+                </picture>
+            </li>
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <h3 class="cs-h3">Problem Seal Analaysis</h3>
+                    <p class="cs-item-text">
+                        Problem seals can be diagnoses nd redesgined within 24 hours.
+                    </p>
+                </a>
+                <picture class="cs-item-background">
+                    <source media="(max-width: 600px)" srcset="https://ik.imagekit.io/6ycdefzj5/clarksealsproblem.jpg">
+                    <source media="(min-width: 601px)" srcset="https://ik.imagekit.io/6ycdefzj5/clarksealsproblem.jpg">
+                    <img decoding="async" src="https://ik.imagekit.io/6ycdefzj5/clarksealsproblem.jpg" alt="construction" width="413" height="374" aria-hidden="true">
+                </picture>
+            </li>
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <h3 class="cs-h3">Precision Manufacturing</h3>
+                    <p class="cs-item-text">
+                        Clark Seal's Ningbo is the most technically advanced seal facorty in the world.
+                    </p>
+                </a>
+                <picture class="cs-item-background">
+                    <source media="(max-width: 600px)" srcset="https://ik.imagekit.io/6ycdefzj5/clarksealsmanufacturing.jpg">
+                    <source media="(min-width: 601px)" srcset="https://ik.imagekit.io/6ycdefzj5/clarksealsmanufacturing.jpg">
+                    <img decoding="async" src="https://ik.imagekit.io/6ycdefzj5/clarksealsmanufacturing.jpg" alt="construction" width="413" height="374" aria-hidden="true">
+                </picture>
+            </li>
+        </ul>
+    </div>
 
+    <!-- Background Image, there's a background image in the CSS for the parallax effect you'll need to change as well if you swap out our images -->
+    <picture class="cs-background">
+        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/construction.jpg">
+        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/construction.jpg">
+        <img decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/construction.jpg" alt="construction" width="2250" height="1500" aria-hidden="true">
+    </picture>
+</section>
+
+<!-- ============================================ -->
+<!--                   About US                   -->
+<!-- ============================================ -->
+
+<section id="sbs-2276">
+    <div class="cs-container">
+        <div class="cs-image-group">
+            <picture class="cs-picture cs-picture1">
+                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/construction2.jpg">
+                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/construction2.jpg">
+                <img aria-hidden="true" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/construction2.jpg" alt="construction site" width="413" height="492" loading="lazy">
+            </picture>
+            <a href="" class="cs-button-solid">Read More</a>
+        </div>
+        <div class="cs-content">
+            <div class="cs-header">
+                <span class="cs-topper">About Us</span>
+                <h2 class="cs-title">Commitment to Quality</h2>
+            </div>
+            <div class="cs-wrapper">
+                <div class="cs-flex">
+                    <p class="cs-text">
+                        At Clark Seals, we are committed to producing the highest quality seals in the world through advanced research and development, continuous technological improvement and uncompromised manufacturing excellence. Our new
+                        state-of-the-art manufacturing facility in Ningbo, China is one of the most technologically advanced seal factories in the world, incorporating the latest in manufacturing, testing and quality control systems.
+                    </p>
+                    <img class="cs-signature" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/signature.png" decoding="async" loading="lazy" alt="signature" width="170" height="59" aria-hidden="true">
+                    <span class="cs-name">William John</span>
+                    <span class="cs-desc">Founder of Build Stitch</span>
+                    <!--if you change this button class name, change the class name to rename it as well in the css at small desktop media query-->
+                    <a href="" class="cs-button-solid">Get Started Today</a>
+                </div>
+                <picture class="cs-picture cs-picture2">
+                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/construction5.jpg">
+                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/construction5.jpg">
+                    <img aria-hidden="true" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/construction5.jpg" alt="construction site" width="362" height="400" loading="lazy">
+                </picture>
+            </div>
+        </div>
+    </div>
+</section>
+            
+<!-- ============================================ -->
+<!--                   Products                   -->
+<!-- ============================================ -->
+
+<section id="services-279">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Our products</span>
+            <h2 class="cs-title">Clark Seal's Sealing Products</h2>
+            <p class="cs-text">
+                Clark Seals designs and manufactures various custom sealing products for Original Equipment Manufacturers using the latest design innovations and material advancements. Our sealing products are over-engineered and precisely manufactured to insure maximum reliability and performance. 
+            </p>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="https://ik.imagekit.io/6ycdefzj5/Shaftseal.jpg">
+                    <source media="(min-width: 601px)" srcset="https://ik.imagekit.io/6ycdefzj5/Shaftseal.jpg">
+                    <img loading="lazy" decoding="https://ik.imagekit.io/6ycdefzj5/Shaftseal.jpg" alt="living room" width="348" height="433" aria-hidden="true">
+                </picture>
+                <div class="cs-box">
+                    <h3 class="cs-h3">Shaft Seals</h3>
+                    <a class="cs-button-transparent" aria-label="read more about foyers" href="/about">Read More</a>
+                </div>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="https://ik.imagekit.io/6ycdefzj5/bearingseal.jpg">
+                    <source media="(min-width: 601px)" srcset="https://ik.imagekit.io/6ycdefzj5/bearingseal.jpg">
+                    <img loading="lazy" decoding="https://ik.imagekit.io/6ycdefzj5/bearingseal.jpg" alt="living room" width="348" height="433" aria-hidden="true">
+                </picture>
+                <div class="cs-box">
+                    <h3 class="cs-h3">Bearing Seals</h3>
+                    <a class="cs-button-transparent" aria-label="read more about bathrooms" href="">Read More</a>
+                </div>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="https://ik.imagekit.io/6ycdefzj5/otherseal.jpg">
+                    <source media="(min-width: 601px)" srcset="https://ik.imagekit.io/6ycdefzj5/otherseal.jpg">
+                    <img loading="lazy" decoding="https://ik.imagekit.io/6ycdefzj5/otherseal.jpg" alt="living room" width="348" height="433" aria-hidden="true">
+                </picture>
+                <div class="cs-box">
+                    <h3 class="cs-h3">Other Sealing Products</h3>
+                    <a class="cs-button-transparent" aria-label="read more about living rooms" href="">Read More</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                    Services                  -->
+<!-- ============================================ -->
+
+<section id="services-1254">
+    <div class="cs-container">
+        <div class="cs-content">
+            <div class="cs-flex-group">
+                <span class="cs-topper">Our Services</span>
+                <h2 class="cs-title">Industries We Serve</h2>
+            </div>
+            <p class="cs-text">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
+            </p>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <h3 class="cs-h3">Agriculture/Construction</h3>
+                    <p class="cs-item-text">
+                        We’ve helped thousands of organizations transform to become relevant of helped thousands.
+                    </p>
+                </a>
+                <picture class="cs-item-background">
+                    <source media="(max-width: 600px)" srcset="https://ik.imagekit.io/6ycdefzj5/agriculture.jpg">
+                    <source media="(min-width: 601px)" srcset="https://ik.imagekit.io/6ycdefzj5/agriculture.jpg">
+                    <img decoding="async" src="https://ik.imagekit.io/6ycdefzj5/agriculture.jpg" alt="construction" width="413" height="374" aria-hidden="true">
+                </picture>
+            </li>
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <h3 class="cs-h3">Appliance</h3>
+                    <p class="cs-item-text">
+                        We’ve helped thousands of organizations transform to become relevant of helped thousands.
+                    </p>
+                </a>
+                <picture class="cs-item-background">
+                    <source media="(max-width: 600px)" srcset="https://ik.imagekit.io/6ycdefzj5/appliance.jpg">
+                    <source media="(min-width: 601px)" srcset="https://ik.imagekit.io/6ycdefzj5/appliance.jpg">
+                    <img decoding="async" src="https://ik.imagekit.io/6ycdefzj5/appliance.jpg" alt="construction" width="413" height="374" aria-hidden="true">
+                </picture>
+            </li>
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <h3 class="cs-h3">Automotive</h3>
+                    <p class="cs-item-text">
+                        We’ve helped thousands of organizations transform to become relevant of helped thousands.
+                    </p>
+                </a>
+                <picture class="cs-item-background">
+                    <source media="(max-width: 600px)" srcset="https://ik.imagekit.io/6ycdefzj5/automotive.jpg">
+                    <source media="(min-width: 601px)" srcset="https://ik.imagekit.io/6ycdefzj5/automotive.jpg">
+                    <img decoding="async" src="https://ik.imagekit.io/6ycdefzj5/automotive.jpg" alt="construction" width="413" height="374" aria-hidden="true">
+                </picture>
+            </li>
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <h3 class="cs-h3">Industrial Equipment</h3>
+                    <p class="cs-item-text">
+                        We’ve helped thousands of organizations transform to become relevant of helped thousands.
+                    </p>
+                </a>
+                <picture class="cs-item-background">
+                    <source media="(max-width: 600px)" srcset="https://ik.imagekit.io/6ycdefzj5/industrial.jpg">
+                    <source media="(min-width: 601px)" srcset="https://ik.imagekit.io/6ycdefzj5/industrial.jpg">
+                    <img decoding="async" src="https://ik.imagekit.io/6ycdefzj5/industrial.jpg" alt="construction" width="413" height="374" aria-hidden="true">
+                </picture>
+            </li>
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <h3 class="cs-h3">Outdoor Power</h3>
+                    <p class="cs-item-text">
+                        We’ve helped thousands of organizations transform to become relevant of helped thousands.
+                    </p>
+                </a>
+                <picture class="cs-item-background">
+                    <source media="(max-width: 600px)" srcset="https://ik.imagekit.io/6ycdefzj5/outdoor.jpg">
+                    <source media="(min-width: 601px)" srcset="https://ik.imagekit.io/6ycdefzj5/outdoor.jpg">
+                    <img decoding="async" src="https://ik.imagekit.io/6ycdefzj5/outdoor.jpg" alt="construction" width="413" height="374" aria-hidden="true">
+                </picture>
+            </li>
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <h3 class="cs-h3">Energy</h3>
+                    <p class="cs-item-text">
+                        We’ve helped thousands of organizations transform to become relevant of helped thousands.
+                    </p>
+                </a>
+                <picture class="cs-item-background">
+                    <source media="(max-width: 600px)" srcset="https://ik.imagekit.io/6ycdefzj5/energy.jpg">
+                    <source media="(min-width: 601px)" srcset="https://ik.imagekit.io/6ycdefzj5/energy.jpg">
+                    <img decoding="async" src="https://ik.imagekit.io/6ycdefzj5/energy.jpg" alt="construction" width="413" height="374" aria-hidden="true">
+                </picture>
+            </li>
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <h3 class="cs-h3">Process Industries</h3>
+                    <p class="cs-item-text">
+                        We’ve helped thousands of organizations transform to become relevant of helped thousands.
+                    </p>
+                </a>
+                <picture class="cs-item-background">
+                    <source media="(max-width: 600px)" srcset="https://ik.imagekit.io/6ycdefzj5/process.jpg">
+                    <source media="(min-width: 601px)" srcset="https://ik.imagekit.io/6ycdefzj5/process.jpg">
+                    <img decoding="async" src="https://ik.imagekit.io/6ycdefzj5/process.jpg" alt="construction" width="413" height="374" aria-hidden="true">
+                </picture>
+            </li>
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <h3 class="cs-h3">Recreation</h3>
+                    <p class="cs-item-text">
+                        We’ve helped thousands of organizations transform to become relevant of helped thousands.
+                    </p>
+                </a>
+                <picture class="cs-item-background">
+                    <source media="(max-width: 600px)" srcset="https://ik.imagekit.io/6ycdefzj5/recreaction.jpg">
+                    <source media="(min-width: 601px)" srcset="https://ik.imagekit.io/6ycdefzj5/recreaction.jpg">
+                    <img decoding="async" src="https://ik.imagekit.io/6ycdefzj5/recreaction.jpg" alt="construction" width="413" height="374" aria-hidden="true">
+                </picture>
+            </li>
+        </ul>
+    </div>
+</section>
+<!-- ============================================ -->
+<!--                   Stats                      -->
+<!-- ============================================ -->
+
+<section id="stats-5">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Why Work with Us</span>
+            <h2 class="cs-title">Our Numbers Speak For Themselves</h2>
+            <p class="cs-text">
+                Facilisis condimentum viverra scelerisque ac morbi sit sed. Turpis sagittis in blandit eleifend tortor ullamcorper eu placerat. Et orci felis volutpat, etiam vitae egestas volutpat pulvinar. 
+            </p>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <span class="cs-number">40+</span>
+                <span class="cs-header">Years Experience</span>
+            </li>
+            <li class="cs-item">
+                <span class="cs-number">4</span>
+                <span class="cs-header">Experienced Staff</span>
+            </li>
+            <li class="cs-item">
+                <span class="cs-number">100+</span>
+                <span class="cs-header">Happy Clients</span>
+            </li>
+            <li class="cs-item">
+                <span class="cs-number">1</span>
+                <span class="cs-header">Year Warranty</span>
+            </li>
+        </ul>
+        <a href="" class="cs-button-solid">Contact Us</a>
+    </div>
+    <!--Background Image-->
+    <picture class="cs-background">
+        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Stats/bg-m.jpg">
+        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Stats/bg.jpg">
+        <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Stats/bg.jpg" alt="brick wall" width="1920" height="1282" aria-hidden="true">
+    </picture>
+</section>
+                                
+               
+<!-- ============================================ -->
+<!--                 Case Studies                 -->
+<!-- ============================================ -->
+
+<section id="services-1728">
+    <div class="cs-container">
+        <div class="cs-content">
+            <div class="cs-flex-group">
+                <span class="cs-topper">Our Services</span>
+                <h2 class="cs-title">Case Studies</h2>
+            </div>
+            <p class="cs-text">
+                Explore real-world applications of our high-performance rubber sets in action. From industrial machinery to custom engineering solutions, these case studies showcase how our products enhance durability, efficiency, and reliability. Click the links below to see how businesses have successfully integrated our rubber solutions into their operations.
+            </p>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <h3 class="cs-h3">Snow Blower</h3>
+                </a>
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="https://ik.imagekit.io/6ycdefzj5/snowblower.jpg">
+                    <source media="(min-width: 601px)" srcset="https://ik.imagekit.io/6ycdefzj5/snowblower.jpg">
+                    <img decoding="async" src="https://ik.imagekit.io/6ycdefzj5/snowblower.jpg" alt="man exercising in a class" width="384" height="480" aria-hidden="true" loading="lazy">
+                </picture>
+            </li>
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <h3 class="cs-h3">Prostheic Knee</h3>
+                </a>
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="https://ik.imagekit.io/6ycdefzj5/knee.jpg">
+                    <source media="(min-width: 601px)" srcset="https://ik.imagekit.io/6ycdefzj5/knee.jpg">
+                    <img decoding="async" src="https://ik.imagekit.io/6ycdefzj5/knee.jpg" alt="man flexing his muscles in a gym" width="384" height="480" aria-hidden="true" loading="lazy">
+                </picture>
+            </li>
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <h3 class="cs-h3">Washing Machine</h3>
+                </a>
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="https://ik.imagekit.io/6ycdefzj5/washingmachine.jpg">
+                    <source media="(min-width: 601px)" srcset="https://ik.imagekit.io/6ycdefzj5/washingmachine.jpg">
+                    <img decoding="async" src="https://ik.imagekit.io/6ycdefzj5/washingmachine.jpg" alt="man lifting weights in a gym" width="384" height="480" aria-hidden="true" loading="lazy">
+                </picture>
+            </li>
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <h3 class="cs-h3">Crown Block</h3>
+                </a>
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="https://ik.imagekit.io/6ycdefzj5/crownblock.jpg">
+                    <source media="(min-width: 601px)" srcset="https://ik.imagekit.io/6ycdefzj5/crownblock.jpg">
+                    <img decoding="async" src="https://ik.imagekit.io/6ycdefzj5/crownblock.jpg" alt="woman doing yoga" width="384" height="480" aria-hidden="true" loading="lazy">
+                </picture>
+            </li>
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <h3 class="cs-h3">Transmission</h3>
+                </a>
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="https://ik.imagekit.io/6ycdefzj5/transmission.jpg">
+                    <source media="(min-width: 601px)" srcset="https://ik.imagekit.io/6ycdefzj5/transmission.jpg">
+                    <img decoding="async" src="https://ik.imagekit.io/6ycdefzj5/transmission.jpg" alt="man cycling on a bike" width="384" height="480" aria-hidden="true" loading="lazy">
+                </picture>
+            </li>
+        </ul>
+    </div>
+</section>
+                                
     {% include 'components/cta.html' %}
 {% endblock %}
