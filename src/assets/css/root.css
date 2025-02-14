@@ -350,6 +350,7 @@ html {
     top: 0;
     left: 0;
     z-index: 10;
+    background-color: #fafbfc;
   }
   #cs-navigation .cs-logo img {
     width: 100%;

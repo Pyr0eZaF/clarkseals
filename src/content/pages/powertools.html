@@ -1,0 +1,86 @@
+---
+title: 'Powertools | Code Stitch Web Designs'
+description: 'Meta description for the page'
+preloadImg: '/assets/images/cabinets2.jpg'
+permalink: 'powertools/'
+eleventyNavigation:
+    key: About Us
+    order: 200
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/about.css">
+{% endblock %}
+
+{% block body %}
+<!-- ============================================ -->
+<!--                  Landing Video               -->
+<!-- ============================================ -->
+
+<section id="cta-2236">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h2 class="cs-title">Power Tools</h2>
+            <p class="cs-text">
+                We have courses on-demand and live instructors for workshops and support. We also provide LIVE instructor-led training courses and onsite training.
+            </p>
+        </div>
+        <div class="cs-video-wrapper">
+            <!--Compress your video and upload it to a CDN like Digital Oceans Spaces so the video file doesn't cause load time issues. You can also remove the video tag and uncomment the picture tag to use a picture instead of a video.-->
+            <video autoplay loop muted loading="lazy" src="https://ik.imagekit.io/6ycdefzj5/planelanding.mp4?tr=orig"></video>
+        <!-- <picture class="cs-picture">
+                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/wedding6.jpeg">
+                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/wedding6.jpeg">
+                <img decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/wedding6.jpeg" alt="wedding" width="1720" height="547">
+            </picture> -->
+        </div>
+    </div>
+</section>
+
+    <!-- ============================================ -->
+    <!--                 Side By Side                 -->
+    <!-- ============================================ -->
+
+    <section id="sbs">
+        <div class="cs-container">
+            <!-- Left Image Section -->
+            <div class="cs-left">
+                <picture class="cs-picture cs-picture1">
+                    <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
+                    <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="cabinets" loading="lazy" width="400" height="563">
+                </picture>
+                <picture class="cs-picture cs-picture2">
+                    <source media="(max-width: 600px)" srcset="/assets/images/construction-m.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/construction.jpg">
+                    <img aria-hidden="true" decoding="async" src="/assets/images/construction.jpg" alt="house" loading="lazy" width="400" height="563">
+                </picture>
+            </div>
+            <!-- Right Content Section-->
+            <div class="cs-right">
+                <span class="cs-topper">About Us</span>
+                <h2 class="cs-title">About Company Title</h2>
+                <p class="cs-text">
+                    Founded in 1956, Clark Seals is a highly specialized seal engineering firm and precision manufacturer of elastomeric seals for original equipment manufacturers and oil and gas drilling and production. For more than 5 decades, Clark Seals has focused on providing the most advanced custom seal designs, application engineering and problem seal analysis in the industry. Today Clark Seals is considered one of the premier seal producers in the world.
+                    Clark Seals is structured as an engineering support organization, seamlessly integrating with manufacturers to provide application and manufacturing support, inventory management and purchasing logistics. Our work is fast and precise and helps strengthen all levels of engineering, manufacturing and supply-chain operations.
+                </p>
+                <p class="cs-text">
+                </p>
+                <div class="cs-flex-group">
+                    <p class="cs-flex-p">
+                        In consequat tincidunt turpis sit amet imperdiet. Praesent Classei consequat tincidunt turpis sit amet imperdiet for mind.
+                    </p>
+                    <span class="cs-name">Justin Time</span>
+                    <span class="cs-job">CEO-Founder</span>
+                    <img class="cs-quote-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg" alt="gavel" width="136" height="77">
+                </div>
+                <a href="/projects" class="cs-button-solid">Our Projects</a>
+            </div>
+        </div>
+    </section>
+
+    {% include 'components/cta.html' %}
+
+{% endblock %}
