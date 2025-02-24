@@ -12,71 +12,124 @@ eleventyNavigation:
 {% extends "layouts/base.html" %}
 
 {% block head %}
-    <link rel="stylesheet" href="/assets/css/projects.css">
+    <link rel="stylesheet" href="/assets/css/o-rings.css">
 {% endblock %}
 
 {% block body %}
 
 <!-- ============================================ -->
-<!--                   Banner                     -->
+<!--                    LANDING                   -->
 <!-- ============================================ -->
 
-<div id="banner-712">
+    <section id="int-hero">
+        <h1 id="home-h">Our Products</h1>
+        <picture>
+            <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/construction.jpg">
+            <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/construction.jpg">
+            <img aria-hidden="true" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/construction.jpg" alt="kitchen cabinets" loading="eager" width="2500" height="1667">
+        </picture>
+
+    </section>
+
+<!-- ============================================ -->
+<!--                 Side By Side                 -->
+<!-- ============================================ -->
+
+<section id="RTsbs-1281">
     <div class="cs-container">
-        <span class="cs-int-title">Products</span>
+        <picture class="cs-picture">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="https://ik.imagekit.io/6ycdefzj5/bearingseal.jpg">
+            <!--Tablet and above Image-->
+            <source media="(min-width: 601px)" srcset="https://ik.imagekit.io/6ycdefzj5/bearingseal.jpg">
+            <img loading="lazy" decoding="async" src="https://ik.imagekit.io/6ycdefzj5/bearingseal.jpg" alt="construction" width="738" height="598">
+        </picture>
+        <div class="cs-content">
+            <div class="cs-flex">
+                <span class="cs-topper">Our Product</span>
+                <h2 class="cs-title">O-Rings</h2>
+            </div>
+            <p class="cs-text">
+                At Clark Seals, we specialize in custom seal design, whether you need a brand-new solution or modifications to an existing one. Our expert team engineers durable, high-performance seals tailored to withstand extreme conditions, from high-speed applications to intense temperatures and pressures. We work closely with you to ensure every seal meets your specific needs, delivering precision-engineered solutions that enhance efficiency and reliability across industries.
+            </p>
+            
+        </div>
     </div>
-    <!--Background Image-->
     <picture class="cs-background">
         <!--Mobile Image-->
-        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/construction.jpg">
+        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/white-waves-m.svg">
         <!--Tablet and above Image-->
-        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/construction.jpg">
-        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/construction.jpg" alt="pills" width="1280" height="568" aria-hidden="true">
+        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/white-waves-m.svg">
+        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/white-waves-m.svg" alt="waves" width="960" height="839">
     </picture>
-</div>
-                                
+</section>
 
 <!-- ============================================ -->
-<!--                Side By Side                  -->
+<!--             Side By Side Reverse             -->
 <!-- ============================================ -->
 
-<section id="sbs-2291">
+<section id="RTsbsr-1281">
     <div class="cs-container">
-        <!-- Left Content Section-->
+        <picture class="cs-picture">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="https://ik.imagekit.io/6ycdefzj5/bearingseal.jpg">
+            <!--Tablet and above Image-->
+            <source media="(min-width: 601px)" srcset="https://ik.imagekit.io/6ycdefzj5/bearingseal.jpg">
+            <img loading="lazy" decoding="async" src="https://ik.imagekit.io/6ycdefzj5/bearingseal.jpg" alt="construction" width="738" height="598">
+        </picture>
         <div class="cs-content">
-            <span class="cs-topper">Our Products</span>
-            <h2 class="cs-title">O-Rings</h2>
+            <div class="cs-flex">
+                <span class="cs-topper">Our Product</span>
+                <h2 class="cs-title">D-Rings</h2>
+            </div>
             <p class="cs-text">
-                Transform your outdoor spaces with our hardscaping services. We design stunning patios, walkways, retaining walls, and outdoor kitchens, combining creativity and expertise to enhance your relaxation and entertainment areas.
+                Clark Seals provides full engineering support to optimize seal performance and extend equipment life. Our team collaborates with engineers to refine design elements, material selection, and key performance factors like lubricant compatibility, surface finish, and tolerances. Whether for new machinery or existing equipment, we deliver precision-engineered sealing solutions that minimize wear, reduce failure rates, and ensure long-term efficiency in even the most demanding applications.
             </p>
-            <div class="cs-features">
-                <h3 class="cs-h3">Key Features:</h3>
-                <ul class="cs-ul">
-                    <li class="cs-li">Custom design tailored to your outdoor space</li>
-                    <li class="cs-li">Durable and aesthetically pleasing materials</li>
-                    <li class="cs-li">Seamless integration with your home's architecture</li>
-                </ul>
-            </div>
-        </div>
-        <!-- Right Image Section -->
-        <div class="cs-image-group">
-            <!--Floating Box-->
-            <div class="cs-box">
-                <span class="cs-number">12K+</span>
-                <div class="cs-flex">
-                    <h3 class="cs-heading">Square Meters Paved</h3>
-                    <span class="cs-desc">Hardscaping projects that combine beauty and functionality.</span>
-                </div>
-            </div>
-            <!--Image-->
-            <picture class="cs-picture">
-                <source media="(max-width: 600px)" srcset="https://ik.imagekit.io/6ycdefzj5/A2S.jpg?updatedAt=1739798607517">
-                <source media="(min-width: 601px)" srcset="https://ik.imagekit.io/6ycdefzj5/A2S.jpg?updatedAt=1739798607517">
-                <img loading="lazy" decoding="async" src="https://ik.imagekit.io/6ycdefzj5/A2S.jpg?updatedAt=1739798607517" alt="meeting" width="630" height="630" aria-hidden="true">
-            </picture>
+            
         </div>
     </div>
+    <picture class="cs-background">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/white-waves-m.svg">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/white-waves.svg">
+        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/white-waves.svg" alt="waves" width="960" height="839">
+    </picture>
 </section>
+
+<!-- ============================================ -->
+<!--             Side By Side Triplet             -->
+<!-- ============================================ -->
+
+<section id="RTsbst-1281">
+    <div class="cs-container">
+        <picture class="cs-picture">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="https://ik.imagekit.io/6ycdefzj5/bearingseal.jpg">
+            <!--Tablet and above Image-->
+            <source media="(min-width: 601px)" srcset="https://ik.imagekit.io/6ycdefzj5/bearingseal.jpg">
+            <img loading="lazy" decoding="async" src="https://ik.imagekit.io/6ycdefzj5/bearingseal.jpg" alt="construction" width="738" height="598">
+        </picture>
+        <div class="cs-content">
+            <div class="cs-flex">
+                <span class="cs-topper">Our Product</span>
+                <h2 class="cs-title">Quad-Rings</h2>
+            </div>
+            <p class="cs-text">
+                Clark Seals prioritizes fast and effective problem resolution to minimize downtime and equipment damage. Our engineering team can diagnose and redesign most failed seals within 24 hours by analyzing key variables and identifying the root cause. Using our proprietary optimization protocol, we develop custom AutoCAD designs to ensure long-term reliability and peak performance. No matter the issue, we provide precise, lasting solutions to keep your operations running smoothly.
+            </p>
+            
+        </div>
+    </div>
+    <picture class="cs-background">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/white-waves-m.svg">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/white-waves.svg">
+        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/white-waves.svg" alt="waves" width="960" height="839">
+    </picture>
+</section>
+
                                                    
 
     {% include 'components/cta.html' %}
