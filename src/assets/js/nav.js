@@ -32,3 +32,25 @@ for (const item of dropDowns) {
 	item.addEventListener('click', onClick);
 }
                                 
+
+
+document.addEventListener("DOMContentLoaded", function () {
+	const items = document.querySelectorAll('#timeline-1517 .cs-item');
+	
+	const observerOptions = {
+	  threshold: 0.5
+	};
+  
+	const observer = new IntersectionObserver((entries) => {
+	  entries.forEach(entry => {
+		if (entry.isIntersecting) {
+		  entry.target.classList.add('active');
+		} else {
+		  entry.target.classList.remove('active');
+		}
+	  });
+	}, observerOptions);
+  
+	items.forEach(item => observer.observe(item));
+  });
+  

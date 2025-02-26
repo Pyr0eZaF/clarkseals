@@ -21,7 +21,7 @@
         <div class="cs-ul-wrapper">
             <ul id="cs-expanded" class="cs-ul">
                 <li class="cs-li">
-                    <a href="/" class="cs-li-link cs-active">
+                    <a href="/" class="cs-li-link {{ 'cs-active' if '' == page.fileSlug }}">
                         Home
                     </a>
                 </li>
@@ -32,7 +32,7 @@
                     </span>
                     <ul class="cs-drop-ul">
                         <li class="cs-drop-li">
-                            <a href="/project-one" class="cs-li-link cs-drop-link">Radial Shaft Seals</a>
+                            <a href="/project-one" class="cs-li-link cs-drop-link ">Radial Shaft Seals</a>
                         </li>
                         <li class="cs-drop-li">
                             <a href="/project-two" class="cs-li-link cs-drop-link">Cassette Seals</a>
@@ -142,7 +142,7 @@
                     </ul>
                 </li>
                 <li class="cs-li">
-                    <a href="/" class="cs-li-link">
+                    <a href="/news" class="cs-li-link {{ 'cs-active' if 'news' == page.fileSlug }}">
                         News
                     </a>
                 </li>
@@ -152,12 +152,12 @@
                     </a>
                 </li>
                 <li class="cs-li">
-                    <a href="/about" class="cs-li-link">
+                    <a href="/about" class="cs-li-link {{ 'cs-active' if 'about' == page.fileSlug }}">
                         About Us
                     </a>
                 </li>
                 <li class="cs-li">
-                    <a href="/contact" class="cs-li-link">
+                    <a href="/contact" class="cs-li-link {{ 'cs-active' if 'contact' == page.fileSlug }}">
                         Contact Us
                     </a>
                 </li>
