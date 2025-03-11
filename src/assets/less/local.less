@@ -1,55 +1,22 @@
+
 /*-- -------------------------- -->
-<---         About US           -->
+<---           About Us         -->
 <--- -------------------------- -*/
 
-/* Mobile */
+/* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-    #sbs-2276 {
-        padding: var(--sectionPadding);
+    #sbs-578 {
         padding-top: 40rem;
-        overflow: hidden;
-        position: relative;
-        z-index: 1;
-
         .cs-container {
             width: 100%;
-            /* changes to 1280px at tablet */
-            max-width: (584/16rem);
+            max-width: (1280/16rem);
             margin: auto;
             display: flex;
             flex-direction: column;
             align-items: center;
             /* 48px - 64px */
-            gap: clamp(3rem, 6vw, 4rem);
+            gap: clamp(3rem, 7vw, 4rem);
         }
-
-        .cs-content {
-            /* set text align to left if content needs to be left aligned */
-            text-align: left;
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            /* centers content horizontally, set to flex-start to left align */
-            align-items: flex-start;
-        }
-
-        .cs-title {
-            max-width: 25ch;
-        }
-
-        .cs-text {
-            &:last-of-type {
-                margin-bottom: (32/16rem);
-            }
-        }
-
-        .cs-signature {
-            width: (170/16rem);
-            height: auto;
-            margin-bottom: (8/16rem);
-            display: block;
-        }
-
         .cs-name {
             font-size: (20/16rem);
             line-height: 1.2em;
@@ -59,37 +26,51 @@
             display: block;
         }
 
-        .cs-desc {
-            font-size: (16/16rem);
-            line-height: 1.5em;
-            margin: 0 0 (32/16rem) 0;
-            color: var(--bodyTextColor);
-            display: block;
+        .cs-content {
+            /* set text align to left if content needs to be left aligned */
+            text-align: left;
+            width: 100%;
+            max-width: (522/16rem);
+            /* moved section padding to the .cs-content so we can have the cs-picture be full width on mobile without the padding preventing it from doing so */
+            padding: var(--sectionPadding);
+            padding-top: 0;
+            /* prevents padding from affecting width and height */
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            /* centers content horizontally, set to flex-start to left align */
+            align-items: flex-start;
+        }
+
+        .cs-text {
+            margin-bottom: (16/16rem);
+            &:last-of-type {
+                margin-bottom: (32/16rem);
+            }
         }
 
         .cs-button-solid {
             font-size: (16/16rem);
-            text-align: center;
             /* 46px - 56px */
             line-height: clamp(2.875rem, 5.5vw, 3.5rem);
-            width: (180/16rem);
             text-decoration: none;
             font-weight: 700;
-            /* clips corners of the before element */
-            overflow: hidden;
+            text-align: center;
             margin: 0;
             color: #fff;
-            padding: 0;
+            min-width: (150/16rem);
+            padding: 0 (24/16rem);
             background-color: var(--primary);
+            border-radius: (4/16rem);
             display: inline-block;
             position: relative;
             z-index: 1;
-            transition: color 0.3s;
+            /* prevents padding from adding to the width */
+            box-sizing: border-box;
 
             &:before {
                 content: "";
                 position: absolute;
-                display: block;
                 height: 100%;
                 width: 0%;
                 background: #000;
@@ -97,51 +78,30 @@
                 top: 0;
                 left: 0;
                 z-index: -1;
+                border-radius: (4/16rem);
                 transition: width 0.3s;
             }
 
             &:hover {
-                color: #fff;
                 &:before {
                     width: 100%;
                 }
             }
         }
 
-        .cs-wrapper {
-            display: flex;
-            flex-direction: column;
-            gap: (48/16rem);
-        }
-
-        .cs-image-group {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
-            gap: (32/16rem);
-
-            a {
-                display: none;
-                flex: none;
-            }
-        }
-
         .cs-picture {
-            width: 100%;
-            height: 90vw;
-            max-height: (500/16rem);
             display: block;
             position: relative;
-            z-index: 1;
+            width: 100%;
+            height: (300/16rem);
 
             img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
                 position: absolute;
                 top: 0;
                 left: 0;
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
             }
         }
     }
@@ -149,89 +109,95 @@
 
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-    #sbs-2276 {
+    #sbs-578 {
+        padding: var(--sectionPadding);
+        padding-top: 15rem;
+
         .cs-container {
-            max-width: (1280/16rem);
+            flex-direction: row;
+            justify-content: flex-start;
+            /* 60px - 128px */
+            gap: clamp(3.75rem, 10vw, 8rem);
         }
 
         .cs-content {
-            /* 32px - 64px */
-            gap: clamp(2rem, 5vw, 4rem);
-        }
-        
-        .cs-title {
-            margin: 0;
+            width: 53%;
+            /* reset the padding, add the section padding back to the section container */
+            padding: 0;
         }
 
-        .cs-wrapper {
-            flex-direction: row;
-            align-items: stretch;
-        }
-
-        .cs-flex {
-            /* 12px to 40px */
-            padding: clamp(.75rem, 3vw, 2.5rem) 0;
-            align-self: center;
-        }
-
-        .cs-picture1 {
-            height: (400/16rem);
-            max-height: initial;
-        }
-
-        .cs-picture2 {
+        .cs-picture {
             width: 47vw;
-            max-width: (362/16rem);
-            height: auto;
-            max-height: 100%;
-            order: -1;
+            max-width: (494/16rem);
+            /* 518px - 700px */
+            height: clamp(32.375rem, 63vw, 43.75rem);
+            /* 16px - 28px, added margin left and bottom to cs-picture so it pushes away by the same amount the yellow box element overlaps it left and bottom. This maintains consistent spacing left and bottom */
+            margin: 0 0 clamp(1rem, 2.4vw, 1.75rem) clamp(1rem, 2.4vw, 1.75rem);
+            position: relative;
+
+            &:before {
+                /* yellow box */
+                content: "";
+                width: 50%;
+                height: 60%;
+                background: var(--primary);
+                opacity: 1;
+                display: block;
+                position: absolute;
+                /* 16px - 28px, wrapped in calc function to multiple by negative 1 and get a negative clamp value */
+                bottom: ~"calc(clamp(1rem, 2.4vw, 1.75rem)*-1)";
+                left: ~"calc(clamp(1rem, 2.4vw, 1.75rem)*-1)";
+            }
         }
     }
 }
-
 /* Small Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
-    #sbs-2276 {
+    #sbs-578 {
+        padding: var(--sectionPadding);
+        padding-top: 15rem;
+
         .cs-container {
             flex-direction: row;
-            align-items: stretch;
-            padding-top: 15rem;
+            justify-content: flex-start;
+            /* 60px - 128px */
+            gap: clamp(3.75rem, 10vw, 8rem);
         }
 
-        .cs-desc {
-            margin: 0;
+        .cs-content {
+            width: 53%;
+            /* reset the padding, add the section padding back to the section container */
+            padding: 0;
         }
 
-        .cs-flex {
-            .cs-button-solid {
-                display: none;
+        .cs-picture {
+            width: 47vw;
+            max-width: (494/16rem);
+            /* 518px - 700px */
+            height: clamp(32.375rem, 63vw, 43.75rem);
+            /* 16px - 28px, added margin left and bottom to cs-picture so it pushes away by the same amount the yellow box element overlaps it left and bottom. This maintains consistent spacing left and bottom */
+            margin: 0 0 clamp(1rem, 2.4vw, 1.75rem) clamp(1rem, 2.4vw, 1.75rem);
+            position: relative;
+
+            &:before {
+                /* yellow box */
+                content: "";
+                width: 50%;
+                height: 60%;
+                background: var(--primary);
+                opacity: 1;
+                display: block;
+                position: absolute;
+                /* 16px - 28px, wrapped in calc function to multiple by negative 1 and get a negative clamp value */
+                bottom: ~"calc(clamp(1rem, 2.4vw, 1.75rem)*-1)";
+                left: ~"calc(clamp(1rem, 2.4vw, 1.75rem)*-1)";
             }
-        }
-
-        .cs-image-group {
-            width:50%;
-            max-width: (413/16rem);
-
-            a {
-                display: inline-block;
-            }
-        }
-
-        .cs-picture1 {
-            height: 100%;
         }
     }
 }
 
-/* Large Desktop - 1300px */
-@media only screen and (min-width: 75rem) {
-    #sbs-2276 {
-        .cs-image-group {
-            margin-bottom: (84/16rem);
-        }
-        padding-top: 0rem;
-    }
-}
+
+                                
 
 /*-- -------------------------- -->
 <---          Products Row 1    -->
