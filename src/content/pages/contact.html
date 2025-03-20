@@ -17,18 +17,37 @@ eleventyNavigation:
 
 {% block body %}
 
-    <!-- ============================================ -->
-    <!--                    LANDING                   -->
-    <!-- ============================================ -->
+<!-- ============================================ -->
+<!--                Contact Banner                -->
+<!-- ============================================ -->
 
-    <section id="int-hero">
-        <h1 id="home-h">Contact Us</h1>
-        <picture>
-            <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/construction.jpg">
-            <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/construction.jpg">
-            <img aria-hidden="true" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/construction.jpg" alt="kitchen cabinets" loading="eager" width="2500" height="1667">
-        </picture>
-    </section>
+<!-- No headers, so no section tag -->
+<div id="contact-strip-719">
+    <ul class="cs-stat-group">
+        <li class="cs-item">
+            <picture class="cs-picture">
+                <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fphone-stroke-light.svg" alt="icon" width="35" height="40" loading="lazy" decoding="async" aria-hidden="true">
+            </picture>
+            <div class="cs-flex-group">
+                <span class="cs-header">Phone</span>
+                <a href="tel:918-664-0587" class="cs-link">+1 (918) 664-0587</a>
+            </div>
+        </li>
+        <li class="cs-item">
+            <picture class="cs-picture">
+                <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fmail-stroke-light.svg" alt="icon" width="40" height="35" loading="lazy" decoding="async" aria-hidden="true">
+            </picture>
+            <div class="cs-flex-group">
+                <span class="cs-header">Email</span>
+                <a href="mailto:Info@clarkseals.com" class="cs-link">Info@clarkseals.com</a>
+            </div>
+        </li>
+       
+    </ul>
+    <!--SVG Waves Background-->
+    <img class="cs-background" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FGraphics%2Fwaves-3.svg" alt="wave graphic" width="1920" height="318" loading="lazy" decoding="async" aria-hidden="true">
+</div>
+            
 
 <!-- ============================================ -->
 <!--                   Contact                    -->
@@ -44,7 +63,7 @@ eleventyNavigation:
             <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/tools.jpg" alt="tools" width="637" height="726">
         </picture>
         <div class="cs-content">
-            <span class="cs-topper">Contact Us</span>
+            <span class="cs-topper">Email Us</span>
             <h2 class="cs-title">Make An Appointment</h2>
             <!--Form-->
             <form class="cs-form" id="cs-form-1184" name="Contact Form" method="post" netlify>
@@ -77,45 +96,6 @@ eleventyNavigation:
         </picture>
     </div>
 </section>
-<!-- ============================================ -->
-<!--                   Contact                    -->
-<!-- ============================================ -->
-
-<!-- No headers, so no section tag -->
-<div id="contact-strip-719">
-    <ul class="cs-stat-group">
-        <li class="cs-item">
-            <picture class="cs-picture">
-                <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fphone-stroke-light.svg" alt="icon" width="35" height="40" loading="lazy" decoding="async" aria-hidden="true">
-            </picture>
-            <div class="cs-flex-group">
-                <span class="cs-header">Phone</span>
-                <a href="tel:918-664-0587" class="cs-link">+1 (918) 664-0587</a>
-            </div>
-        </li>
-        <li class="cs-item">
-            <picture class="cs-picture">
-                <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fmail-stroke-light.svg" alt="icon" width="40" height="35" loading="lazy" decoding="async" aria-hidden="true">
-            </picture>
-            <div class="cs-flex-group">
-                <span class="cs-header">Email</span>
-                <a href="mailto:Info@clarkseals.com" class="cs-link">Info@clarkseals.com</a>
-            </div>
-        </li>
-        <li class="cs-item">
-            <picture class="cs-picture">
-                <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fpin-stroke-light.svg" alt="icon" width="40" height="40" loading="lazy" decoding="async" aria-hidden="true">
-            </picture>
-            <div class="cs-flex-group">
-                <span class="cs-header">Address</span>
-                <span class="cs-address">3824 S 79th East Ave, 
-                    Tulsa, Oklahoma 74145,</span>
-            </div>
-        </li>
-    </ul>
-    <!--SVG Waves Background-->
-    <img class="cs-background" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FGraphics%2Fwaves-3.svg" alt="wave graphic" width="1920" height="318" loading="lazy" decoding="async" aria-hidden="true">
-</div>
                                 
                                 
 {% endblock %}
