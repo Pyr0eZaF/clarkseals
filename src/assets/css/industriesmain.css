@@ -1,0 +1,333 @@
+/* PAGE-SPECIFIC STYLES FOR THE ABOUT PAGE */
+/*-- -------------------------- -->
+<---             CTA            -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #cta-2236 {
+    background-color: #f7f7f7;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    padding-top: 2rem;
+  }
+  #cta-2236 .cs-container {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 5vw, 4rem);
+    position: relative;
+    z-index: 1;
+  }
+  #cta-2236 .cs-container::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%);
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  #cta-2236 .cs-content {
+    /* aligns text centrally. set to left to left-align text */
+    text-align: center;
+    padding: var(--sectionPadding);
+    /* 60px - 150px */
+    padding-top: clamp(3.75rem, 8.82vw, 9.375rem);
+    padding-bottom: clamp(3.75rem, 8.82vw, 9.375rem);
+    pointer-events: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* centrally aligns items. set to flex-start to left-align items */
+    align-items: center;
+    z-index: 2;
+  }
+  #cta-2236 .cs-title {
+    /* 31px - 39px */
+    font-size: clamp(1.9375rem, 3vw, 2.4375rem);
+    color: var(--bodyTextColorWhite);
+  }
+  #cta-2236 .cs-text {
+    margin: 0 0 2rem;
+    color: var(--bodyTextColorWhite);
+  }
+  #cta-2236 .cs-button-outline {
+    font-size: 1rem;
+    font-weight: 700;
+    /* 46px - 56px */
+    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+    text-align: center;
+    text-decoration: none;
+    min-width: 12.5rem;
+    margin: 0;
+    /* prevents padding from adding to the width */
+    box-sizing: border-box;
+    /* 32px - 48px */
+    padding: 0 clamp(2rem, 4vw, 3rem);
+    pointer-events: auto;
+    color: var(--bodyTextColorWhite);
+    border: 1px solid var(--bodyTextColorWhite);
+    display: inline-block;
+    position: relative;
+    transition: color 0.3s;
+  }
+  #cta-2236 .cs-button-outline:before {
+    content: "";
+    width: 0%;
+    height: 100%;
+    background: var(--primary);
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: width 0.3s;
+  }
+  #cta-2236 .cs-button-outline:hover {
+    color: var(--headerColor);
+  }
+  #cta-2236 .cs-button-outline:hover:before {
+    width: 100%;
+  }
+  #cta-2236 .cs-video-wrapper {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+  }
+  #cta-2236 .cs-video-wrapper:hover {
+    cursor: pointer;
+  }
+  #cta-2236 .cs-video-wrapper:hover .cs-play {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+  #cta-2236 .cs-video-wrapper video,
+  #cta-2236 .cs-video-wrapper .cs-picture {
+    width: 100%;
+    height: 100%;
+    /* makes image act as a background image */
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  #cta-2236 .cs-video-wrapper video img,
+  #cta-2236 .cs-video-wrapper .cs-picture img {
+    width: 100%;
+    height: 100%;
+    /* makes image act as a background image */
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  #cta-2236 .cs-video-wrapper video:before,
+  #cta-2236 .cs-video-wrapper .cs-picture:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%);
+    /* prevents the cursor from interacting with it */
+    pointer-events: none;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+}
+/*-- -------------------------- -->
+<---         Industries         -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #services-1254 {
+    padding: clamp(10.75rem, 7.82vw, 6.25rem) 1rem;
+    position: relative;
+    z-index: 10;
+  }
+  #services-1254 .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+  #services-1254 .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: left;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: flex-start;
+  }
+  #services-1254 .cs-title {
+    max-width: 20ch;
+  }
+  #services-1254 .cs-card-group {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    /* 16px - 20px */
+    gap: clamp(1rem, 2vw, 1.25rem);
+  }
+  #services-1254 .cs-item {
+    width: 100%;
+    text-align: left;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    border-radius: 0.5rem;
+    /* clips background image corners */
+    overflow: hidden;
+    box-shadow: 0px 12px 80px 0px rgba(26, 26, 26, 0.08);
+    /* prevents padding and border from affecting height and width */
+    box-sizing: border-box;
+    grid-column: span 12;
+    grid-row: span 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    position: relative;
+    z-index: 1;
+  }
+  #services-1254 .cs-item:hover .cs-item-background img {
+    opacity: 0.4;
+    transform: scale(1.3);
+  }
+  #services-1254 .cs-item:hover .cs-h3 {
+    color: var(--primary);
+  }
+  #services-1254 .cs-item:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    /* prevents border from affecting height and width */
+    box-sizing: border-box;
+    border-radius: 0.5rem;
+    /* prevents the mouse from interacting with it so when you hover hover the other elements inside the card it doesn't block your mouse from hovering over them */
+    pointer-events: none;
+    opacity: 1;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: 10;
+  }
+  #services-1254 .cs-link {
+    text-decoration: none;
+    /* 125px - 236px */
+    /* padding goes on the link, not the cs-item as is normal. We do this because we want the whole card to be hoverable. So we add the padding to the link tag to create the space inside the card. By adding the space inside the cs-link tag we can make the whole card hoverable since the padding is now contributing to the height and widht of the link */
+    padding: clamp(7.8125rem, 19vw, 14.75rem) 1.5rem 1.5rem;
+  }
+  #services-1254 .cs-h3 {
+    /* 20px - 25px */
+    font-size: clamp(1.25rem, 2.5vw, 1.5625rem);
+    line-height: 1.2em;
+    font-weight: bold;
+    text-align: inherit;
+    margin: 0 0 0.75rem 0;
+    color: var(--bodyTextColorWhite);
+    transition: color 0.3s;
+  }
+  #services-1254 .cs-item-text {
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    line-height: 1.5em;
+    max-width: 28.125rem;
+    margin: 0;
+    padding: 0;
+    color: var(--bodyTextColorWhite);
+  }
+  #services-1254 .cs-item-background {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  #services-1254 .cs-item-background:before {
+    /* background color overlay */
+    content: "";
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: #1a1a1a;
+    opacity: 0.24;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  #services-1254 .cs-item-background:after {
+    /* background color overlay */
+    content: "";
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, #000000 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, #000000 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #000000 100%);
+    opacity: 0.4;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+  }
+  #services-1254 .cs-item-background img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* Makes img tag act as a background image */
+    object-fit: cover;
+    transition: transform 0.6s, opacity 0.3s;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #services-1254 {
+    padding-bottom: 0;
+  }
+  #services-1254 .cs-content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+  }
+  #services-1254 .cs-title {
+    margin: 0;
+  }
+  #services-1254 .cs-flex-group {
+    width: 50%;
+  }
+  #services-1254 .cs-item {
+    grid-column: span 6;
+  }
+}
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #services-1254 .cs-item {
+    grid-column: span 3;
+  }
+}
