@@ -1,0 +1,47 @@
+---
+title: 'News'
+description: 'Meta description for the page'
+preloadImg: '/assets/images/cabinets2.jpg'
+permalink: 'newsinterior5/'
+eleventyNavigation:
+    key: News
+    order: 500
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/newsinterior.css">
+{% endblock %}
+
+{% block body %}
+
+<!-- ============================================ -->
+<!--                 Side By Side                 -->
+<!-- ============================================ -->
+
+<section id="sbs-578">
+    <div class="cs-container">
+        <picture class="cs-picture">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/fishing6.jpg">
+            <!--Tablet and above Image-->
+            <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/fishing6.jpg">
+            <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/fishing6.jpg" alt="room" width="494" height="700">
+        </picture>
+        <div class="cs-content">
+            <span class="cs-topper">September 4th, 2014</span>
+            <h2 class="cs-title">Clark Seals is Hiring Design Engineers</h2>
+            <p class="cs-text">
+                Clark Seals is actively seeking Seal Design Engineers to meet the market’s growing demand. Candidates with a degree in Mechanical Engineering are encouraged to send their resume to info@clarkseals.com.
+            </p>
+         
+            <a href="" class="cs-button-solid"></a>
+        </div>
+    </div>
+</section>
+                                
+                                
+    {% include 'components/cta.html' %}
+
+{% endblock %}

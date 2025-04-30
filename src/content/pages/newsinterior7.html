@@ -1,0 +1,53 @@
+---
+title: 'News'
+description: 'Meta description for the page'
+preloadImg: '/assets/images/cabinets2.jpg'
+permalink: 'newsinterior7/'
+eleventyNavigation:
+    key: News
+    order: 500
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/newsinterior.css">
+{% endblock %}
+
+{% block body %}
+
+<!-- ============================================ -->
+<!--                 Side By Side                 -->
+<!-- ============================================ -->
+
+<section id="sbs-578">
+    <div class="cs-container">
+        <picture class="cs-picture">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/fishing6.jpg">
+            <!--Tablet and above Image-->
+            <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/fishing6.jpg">
+            <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/fishing6.jpg" alt="room" width="494" height="700">
+        </picture>
+        <div class="cs-content">
+            <span class="cs-topper">January 1st, 2018</span>
+            <h2 class="cs-title"> Thomas Silvaroli Joins as Territory Sales Manager</h2>
+            <p class="cs-text">
+                Clark Seals announced that Thomas Silvaroli has joined as Territory Sales Manager to manage sales operations in Ohio, Michigan, and South Carolina.
+            </p>
+            <p class="cs-text">
+                Silvaroli previously worked at Freudenberg NOK managing the company's Automotive objectives before being promoted to Global Key Accounts Manager. He also spent 25 years at Parker Hannifin Seal Group and holds a Bachelor of Business from Kent State University.
+            </p>
+            <p class="cs-text">
+                "Tom is one of the most knowledgeable and experienced rotary shaft seal salesmen in the industry," commented Scott Zahn, Director of Business Development. "He has an impressive depth of product and equipment application expertise and will play an important role in our company's OEM growth initiatives."
+            </p>
+         
+            <a href="" class="cs-button-solid"></a>
+        </div>
+    </div>
+</section>
+                                
+                                
+    {% include 'components/cta.html' %}
+
+{% endblock %}

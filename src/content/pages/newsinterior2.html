@@ -1,0 +1,52 @@
+---
+title: 'News'
+description: 'Meta description for the page'
+preloadImg: '/assets/images/cabinets2.jpg'
+permalink: 'newsinterior2/'
+eleventyNavigation:
+    key: News
+    order: 500
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/newsinterior.css">
+{% endblock %}
+
+{% block body %}
+
+<!-- ============================================ -->
+<!--                 Side By Side                 -->
+<!-- ============================================ -->
+
+<section id="sbs-578">
+    <div class="cs-container">
+        <picture class="cs-picture">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/fishing6.jpg">
+            <!--Tablet and above Image-->
+            <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/fishing6.jpg">
+            <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/fishing6.jpg" alt="room" width="494" height="700">
+        </picture>
+        <div class="cs-content">
+            <span class="cs-topper">July 5th, 2011</span>
+            <h2 class="cs-title">Becky Burkholder Selected as Sales Representative</h2>
+            <p class="cs-text">
+                Clark Seals announced that Becky Burkholder has been named the Exclusive Sales Representative for Texas, Oklahoma, Arkansas, and Louisiana. In her new role, she will promote and sell Clark Seals’ products to manufacturers in the US, Canada, and Mexico.
+            </p>
+            <p class="cs-text">
+                Becky brings over 20 years of sales experience and previously managed a territory that grew to over $8 million. Her expertise in materials, part design, manufacturing processes, and supply chain management makes her a strong asset to the team.
+            </p>
+            <p class="cs-text">
+                "Becky brings a wealth of product knowledge and sales experience to our company," commented Scott Zahn, Director of Sales. "Her leadership will be instrumental as we expand our market presence and introduce our new factory."
+            </p>
+            <a href="" class="cs-button-solid"></a>
+        </div>
+    </div>
+</section>
+                                
+                                
+    {% include 'components/cta.html' %}
+
+{% endblock %}

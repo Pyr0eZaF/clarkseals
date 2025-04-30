@@ -1,0 +1,56 @@
+---
+title: 'News'
+description: 'Meta description for the page'
+preloadImg: '/assets/images/cabinets2.jpg'
+permalink: 'newsinterior9/'
+eleventyNavigation:
+    key: News
+    order: 500
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/newsinterior.css">
+{% endblock %}
+
+{% block body %}
+
+<!-- ============================================ -->
+<!--                 Side By Side                 -->
+<!-- ============================================ -->
+
+<section id="sbs-578">
+    <div class="cs-container">
+        <picture class="cs-picture">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/fishing6.jpg">
+            <!--Tablet and above Image-->
+            <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/fishing6.jpg">
+            <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/fishing6.jpg" alt="room" width="494" height="700">
+        </picture>
+        <div class="cs-content">
+            <span class="cs-topper">December 1st, 2022</span>
+            <h2 class="cs-title"> Clark Seals Hires Jeff Thompson as Sales Manager</h2>
+            <p class="cs-text">
+                Clark Seals, a sealing technology company, announced today that Jeff Thompson has joined the company as Territory Sales Manager. In his new position, Thompson will manage sales operations in Texas, Oklahoma, Arkansas, Louisiana, Mississippi and Alabama.
+            </p>
+            <p class="cs-text">
+                Prior to joining Clark Seals, Thompson served as Industrial Manager at Parker Hannifin Rotary Seal Division where he successfully expanded sales and strengthened customer relationships. Before that, he served as Territory Sales Manager at JM Clipper and holds a Bachelor's degree in Business Administration from Letourneau University.
+            </p>
+            <p class="cs-text">
+                "Jeff brings a wealth of industry knowledge and professionalism to our organization and will play an important role in our company's sales initiatives," commented Scott Zahn, Director of Business Development. "With more than 20 years of experience in the sealing industry and uncompromising integrity, I believe Jeff will quickly become a valued resource for manufacturers looking to improve supply of rubber and sealing products."
+            </p>
+            <p class="cs-text">
+                <strong>About Clark Seals:</strong> Founded in 1956, Clark Seals is a leader in elastomeric seal design and manufacturing for the Agriculture, Appliance, Automotive, Construction, Energy, Industrial, and Outdoor Power equipment industries. Headquartered in Tulsa, Oklahoma, the company also has sales and engineering offices across several U.S. states.
+            </p>
+         
+            <a href="" class="cs-button-solid"></a>
+        </div>
+    </div>
+</section>
+                                
+                                
+    {% include 'components/cta.html' %}
+
+{% endblock %}

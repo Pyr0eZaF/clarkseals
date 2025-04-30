@@ -1,0 +1,49 @@
+---
+title: 'News'
+description: 'Meta description for the page'
+preloadImg: '/assets/images/cabinets2.jpg'
+permalink: 'newsinterior1/'
+eleventyNavigation:
+    key: News
+    order: 500
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/newsinterior.css">
+{% endblock %}
+
+{% block body %}
+
+<!-- ============================================ -->
+<!--                 Side By Side                 -->
+<!-- ============================================ -->
+
+<section id="sbs-578">
+    <div class="cs-container">
+        <picture class="cs-picture">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/fishing6.jpg">
+            <!--Tablet and above Image-->
+            <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/fishing6.jpg">
+            <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/fishing6.jpg" alt="room" width="494" height="700">
+        </picture>
+        <div class="cs-content">
+            <span class="cs-topper">March 11th, 2011</span>
+            <h2 class="cs-title">Scott Zahn Joins as Director of Sales</h2>
+            <p class="cs-text">
+                Clark Seals announced that Scott Zahn has joined the company as Director of Sales. In this role, he will oversee all domestic sales divisions and manage the sales representative network.
+            </p>
+            <p class="cs-text">
+                Previously, Zahn served as Vice President of Retail Sales for Winston Company—expanding mass retail brands and deploying new product initiatives—and as President of Global Bearings, Inc. He holds a Bachelor of Science in Business Administration from the University of Tulsa.
+            </p>
+            <a href="" class="cs-button-solid"></a>
+        </div>
+    </div>
+</section>
+                                
+                                
+    {% include 'components/cta.html' %}
+
+{% endblock %}
