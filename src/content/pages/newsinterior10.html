@@ -1,0 +1,61 @@
+---
+title: 'News | Clark Seals'
+description: 'Meta description for the page'
+preloadImg: '/assets/images/cabinets2.jpg'
+permalink: 'newsinterior10/'
+eleventyNavigation:
+    key: News
+    order: 500
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/newsinterior.css">
+{% endblock %}
+
+{% block body %}
+
+<!-- ============================================ -->
+<!--                 Side By Side                 -->
+<!-- ============================================ -->
+
+<section id="sbs-578">
+    <div class="cs-container">
+        <picture class="cs-picture">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/fishing6.jpg">
+            <!--Tablet and above Image-->
+            <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/fishing6.jpg">
+            <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/fishing6.jpg" alt="room" width="494" height="700">
+        </picture>
+        <div class="cs-content">
+            <span class="cs-topper">May 1st, 2025</span>
+            <h2 class="cs-title"> Clark Seals Hires Jeff Thompson as Sales Manager</h2>
+            <p class="cs-text">
+                Clark Seals, a leader in advanced sealing technologies, today announced a major expansion of its seal manufacturing facility in Tulsa, Oklahoma. This investment will triple the company’s U.S. production capacity and introduce new automation and manufacturing technologies to enhance product quality, shorten lead times, and reduce costs to globally competitive levels.
+            </p>
+            <p class="cs-text">
+                “This expansion positions Clark Seals as one of the only seal manufacturers producing high-volume,precision-engineered sealing components at scale in the United States,” said Scott Zahn, President of Clark Seals. “It gives equipment manufacturers a reliable domestic alternative to imported seals, helping them reduce supply chain risk, avoid tariff volatility, and gain greater pricing stability.”
+            </p>
+            <p class="cs-text">
+                For nearly 70 years, Clark Seals has partnered with offshore producers for high-volume production. But with growing concerns about global disruptions, rising tariffs, and longer lead times, the company is responding to increased customer demand for onshore manufacturing. The expanded Tulsa facility will serve OEMs across a wide range of industries—including Agriculture,
+                Appliance, Automotive, Construction, Energy, Industrial, and Outdoor Power Equipment—who require
+                dependable, U.S.-made sealing solutions.
+            </p>
+            <p class="cs-text">
+                <strong>About Clark Seals:</strong> Founded in 1956, Clark Seals designs and manufactures high-performance
+                elastomeric seals for original equipment manufacturers. Known for industry-leading quality, delivery and
+                service, the company is headquartered in Tulsa, Oklahoma, with sales and engineering offices across
+                Texas, Oklahoma, Indiana, Illinois, Wisconsin, Ohio, and New York.
+            </p>
+         
+            <a href="" class="cs-button-solid"></a>
+        </div>
+    </div>
+</section>
+                                
+                                
+    {% include 'components/cta.html' %}
+
+{% endblock %}
