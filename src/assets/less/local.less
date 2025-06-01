@@ -380,6 +380,7 @@
                 filter 0.3s,
                 transform 0.3s;
         }
+        
     }
 }
 
@@ -404,6 +405,195 @@
         }
     }
 }
+
+
+
+
+
+/*-- -------------------------- -->
+<---          Products 4x3        -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #services-1168 {
+        background-color: #fff;
+        padding: var(--sectionPadding);
+
+        .cs-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: auto;
+            max-width: 51.5rem; /* 824px */
+            width: 100%;
+            gap: clamp(3rem, 6vw, 4rem);
+        }
+
+        .cs-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            text-align: center;
+        }
+
+        .cs-title {
+            max-width: 20ch;
+        }
+
+        .cs-card-group {
+            display: grid;
+            align-items: stretch;
+            grid-template-columns: repeat(12, 1fr);
+            margin: 0;
+            width: 100%;
+            padding: 0;
+            gap: clamp(1rem, 2vw, 1.25rem);
+        }
+
+        .cs-item {
+            z-index: 1;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            background-color: #f7f7f7;
+            width: 100%;
+            list-style: none;
+            text-align: left;
+            grid-column: span 12;
+            border: 1px solid #67676721;
+            transition: background-color 0.3s;
+
+            &:hover {
+                background-color: #c6c5c54f;
+
+                .cs-picture {
+                    img {
+                        transform: scale(1.2);
+                    }
+
+                    &:hover {
+                        background-color: #c6c5c54f;
+                        transition: background-color 0.3s;
+                    }
+                }
+
+                .cs-h3,
+                .cs-link {
+                    color: var(--primary);
+                }
+
+                .cs-arrow {
+                    filter: initial;
+                }
+            }
+        }
+
+        .cs-picture {
+            position: relative;
+            display: block;
+            height: clamp(8rem, 20vw, 11rem); /* SHORTER image height */
+            width: 100%;
+            overflow: hidden;
+
+            img {
+                z-index: -1;
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                transition: transform 0.65s;
+            }
+        }
+
+        .cs-info {
+            display: flex;
+            flex-direction: column;
+            padding: 1rem; /* Reduced padding */
+        }
+
+        .cs-h3 {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            width: 100%;
+            box-sizing: border-box;
+            font-size: clamp(1.125rem, 2vw, 1.375rem); /* Slightly smaller */
+            line-height: 1.5em;
+            font-weight: 700;
+            color: var(--headerColor);
+            margin: 0 0 0.5rem 0; /* Less bottom margin */
+            transition: color 0.3s;
+        }
+
+        .cs-item-text {
+            width: 100%;
+            box-sizing: border-box;
+            font-size: clamp(0.8125rem, 1.4vw, 0.9375rem); /* Slightly smaller */
+            line-height: 1.5em;
+            color: var(--bodyTextColor);
+            margin: 0;
+        }
+
+        .cs-link {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            text-decoration: none;
+            font-size: 1rem;
+            line-height: 1.2em;
+            font-weight: 700;
+            color: var(--primary);
+            margin-top: 0.75rem; /* Reduced top margin */
+            transition: color 0.3s;
+
+            &:hover {
+                .cs-arrow {
+                    transform: translateX(0.25rem);
+                }
+            }
+        }
+
+        .cs-arrow {
+            filter: grayscale(1) brightness(0);
+            display: block;
+            height: auto;
+            width: 1.25rem; /* 20px */
+            transition:
+                filter 0.3s,
+                transform 0.3s;
+        }
+    }
+}
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #services-1168 {
+        .cs-item {
+            grid-column: span 6;
+        }
+    }
+}
+
+/* Large Desktop - 1300px */
+@media only screen and (min-width: 81.25rem) {
+    #services-1168 {
+        .cs-container {
+            max-width: 90rem; /* 1440px */
+        }
+
+        .cs-item {
+            grid-column: span 3;
+        }
+    }
+}
+
+
+                                
 
                             
                              
