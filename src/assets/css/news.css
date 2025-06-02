@@ -1,4 +1,136 @@
 /*-- -------------------------- -->
+<---         News              -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #services-1684 {
+    padding: var(--sectionPadding);
+    padding-top: 10rem;
+  }
+  #services-1684 .cs-container {
+    width: 100%;
+    /* changes to 1280px at desktop */
+    max-width: 36.5rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+  #services-1684 .cs-content {
+    /* set text align to center if content needs to be centrally aligned */
+    text-align: left;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* left aligns the content, center the content by using 'center' */
+    align-items: flex-start;
+  }
+  #services-1684 .cs-text {
+    max-width: none;
+  }
+  #services-1684 .cs-card-group {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-flow: row;
+    gap: 1.75rem;
+  }
+  #services-1684 .cs-item {
+    list-style: none;
+    width: 100%;
+    margin: 0 auto;
+    /* prevents padding and border from affecting height and width */
+    box-sizing: border-box;
+    padding-bottom: 1.75rem;
+    border-bottom: 1px solid var(--primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    grid-column: span 12;
+    grid-row: span 1;
+    position: relative;
+    z-index: 1;
+    transition: box-shadow 0.3s, border-color 0.3s;
+  }
+  #services-1684 .cs-item:hover .cs-h3,
+  #services-1684 .cs-item:hover .cs-link {
+    color: var(--primary);
+  }
+  #services-1684 .cs-item:hover .cs-arrow {
+    filter: initial;
+  }
+  #services-1684 .cs-item:last-of-type {
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+  #services-1684 .cs-h3 {
+    /* 20px - 31px */
+    font-size: clamp(1.25rem, 2vw, 1.9375rem);
+    font-weight: bold;
+    line-height: 1.2em;
+    text-align: inherit;
+    margin: 0 0 1rem;
+    color: var(--headerColor);
+    transition: color 0.3s;
+  }
+  #services-1684 .cs-item-text {
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    line-height: 1.5em;
+    margin: 0 0 1.5rem 0;
+    padding: 0;
+    color: var(--bodyTextColor);
+  }
+  #services-1684 .cs-link {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.2em;
+    text-align: inherit;
+    text-decoration: none;
+    margin-top: auto;
+    color: var(--primary);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.625rem;
+    transition: color 0.3s;
+  }
+  #services-1684 .cs-link:hover .cs-arrow {
+    transform: translateX(0.25rem);
+  }
+  #services-1684 .cs-link-text {
+    width: fit-content;
+  }
+  #services-1684 .cs-arrow {
+    width: 1.25rem;
+    height: auto;
+    display: block;
+    transition: filter 0.3s, transform 0.3s;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #services-1684 .cs-container {
+    max-width: 80rem;
+  }
+  #services-1684 .cs-card-group {
+    /* 20px - 32px */
+    gap: clamp(1.25rem, 3vw, 2rem);
+  }
+  #services-1684 .cs-item {
+    padding: 0;
+    /* 20px - 32px */
+    padding-left: clamp(1.25rem, 3vw, 2rem);
+    border: none;
+    border-left: 1px solid var(--primary);
+    grid-column: span 4;
+  }
+}
+/*-- -------------------------- -->
 <---           Blog             -->
 <--- -------------------------- -*/
 /* Mobile - 360px */

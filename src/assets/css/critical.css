@@ -112,7 +112,7 @@
     grid-row: span 1;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: flex-end;
     position: relative;
     z-index: 1;
@@ -152,10 +152,12 @@
     font-size: clamp(1.25rem, 2.5vw, 1.5625rem);
     line-height: 1.2em;
     font-weight: bold;
-    text-align: inherit;
+    text-align: center;
     margin: 0 0 0.75rem 0;
     color: var(--bodyTextColorWhite);
     transition: color 0.3s;
+    width: 100%;
+    /* ✅ Ensures full width for alignment */
   }
   #hero-1250 .cs-item-text {
     /* 14px - 16px */
