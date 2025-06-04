@@ -6,6 +6,7 @@
   #contact-strip-719 {
     padding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
     padding-top: 7rem;
+    padding-bottom: 2.5rem;
     background-color: var(--primary);
     position: relative;
     z-index: 1;

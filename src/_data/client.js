@@ -1,16 +1,16 @@
 module.exports = {
-    "name": "Code Stitch Web Designs",
-    "email": "help@codestitch.app",
+    "name": "Clark Seals",
+    "email": "sales@clarkseals.com",
     "phoneForTel": "555-779-4407",
     "phoneFormatted": "(555) 779-4407",
     "address": {
-        "lineOne": "First Address Line",
+        "lineOne": "3824 S 79th East Ave",
         "lineTwo": "Second Address Line",
-        "city": "Denver",
-        "state": "CO",
-        "zip": "80206",
+        "city": "Tulsa",
+        "state": "OK",
+        "zip": "74145",
         "country": "US",
-        "mapLink": "https://maps.app.goo.gl/TEdS5KoLC9ZcULuQ6"
+        "mapLink": "https://maps.app.goo.gl/mEvYrKqEQxFVLdqj8"
     },
     "socials": {
         "facebook": "https://www.facebook.com/",
