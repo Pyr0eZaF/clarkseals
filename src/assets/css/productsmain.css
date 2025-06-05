@@ -301,3 +301,31 @@
     grid-column: span 3;
   }
 }
+.cs-info {
+  width: 100%;
+}
+.cs-h3 {
+  justify-content: center !important;
+}
+.cs-item {
+  position: relative;
+  overflow: hidden;
+}
+.cs-full-link {
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+  display: block;
+  pointer-events: auto;
+}
+.cs-full-link::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+.cs-item > *:not(.cs-full-link) {
+  position: relative;
+  z-index: 3;
+  pointer-events: auto;
+}
