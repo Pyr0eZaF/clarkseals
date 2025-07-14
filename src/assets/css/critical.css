@@ -6,7 +6,7 @@
   #hero-1250 {
     padding: var(--sectionPadding);
     /* 200px - 300px - leaving extra space for the navigation */
-    padding-top: clamp(12.5rem, 31.95vw, 18.75rem);
+    padding-top: clamp(10.5rem, 31.95vw, 12.75rem);
     position: relative;
     z-index: 10;
   }
