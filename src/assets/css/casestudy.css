@@ -126,7 +126,7 @@
   #sbs-1640 .cs-picture img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     position: absolute;
     top: 0;
     left: 0;
@@ -365,6 +365,44 @@
     /* centers content horizontally, set to flex-start to left align */
     align-items: flex-start;
   }
+  #table-1669 .cs-content .cs-button-more-info {
+    z-index: 1;
+    position: absolute;
+    align-self: flex-end;
+    display: inline-block;
+    max-width: 80rem;
+    background-color: var(--primary);
+    width: auto;
+    padding: 0 1.875rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    line-height: 3.125em;
+    font-weight: bold;
+    color: #000;
+    transition: color 0.3s;
+    transition-delay: 0.1s;
+    text-align: center;
+  }
+  #table-1669 .cs-content .cs-button-more-info:hover {
+    color: #fff;
+  }
+  #table-1669 .cs-content .cs-button-more-info:hover:before {
+    width: 100%;
+  }
+  #table-1669 .cs-content .cs-button-more-info:before {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    opacity: 1;
+    display: block;
+    background-color: #000;
+    height: 100%;
+    width: 0;
+    transition: width 0.3s;
+  }
   #table-1669 .cs-table {
     width: 100%;
     border-collapse: collapse;
@@ -412,5 +450,20 @@
   #table-1669 .cs-table {
     display: block;
     overflow-x: auto;
+  }
+}
+/* Responsive: Stack vertically on small screens */
+@media (max-width: 765px) {
+  .cs-header-row {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+  }
+  .cs-button-more-info {
+    align-self: flex-start !important;
+    position: static !important;
+    width: 100%;
+    margin-left: 0;
+    margin-top: 1rem;
   }
 }
